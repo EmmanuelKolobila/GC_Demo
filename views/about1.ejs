@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs') %>
+</head>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <h1>this is about page</h1>
+</body>
+</html>
+
+const newUser = new users(req.body);
+    newUser.save()
+        .then(() => {
+            res.redirect('/contact'); 
+        })
+        .catch((err) => {
+            console.log('Error saving user:', err); 
+            res.redirect('/contact'); 
+        });
+
+        <% if (successMessage) { %>
+            <span id="successMessage" style="display: block"><%= successMessage %></span>
+        <% } %>
+        
+        <% if (errorMessage) { %>
+            <span id="errorMessage" style="display: block;"><%= errorMessage %></span>
+        <% } %>
+        
+        

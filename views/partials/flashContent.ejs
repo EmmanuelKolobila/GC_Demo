@@ -1,0 +1,25 @@
+<div class="toast-container position-fixed top-0 end-0 p-3">
+    <% if (successMessage) { %>
+        <div class="toast show" role="alert" >
+            <div class="toast-header">
+                <strong class="me-auto">Success</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                <%= successMessage %>
+            </div>
+        </div>
+    <% } %>
+
+    <% if (errorMessage) { %>
+        <div class="toast show bg-danger text-white" role="alert">
+            <div class="toast-header text-white bg-dark">
+                <strong class="me-auto">Error</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                <%= errorMessage %>
+            </div>
+        </div>
+    <% } %>
+</div>
