@@ -63,6 +63,20 @@ app.get('/testimonial', (req, res) => {
     res.render('testimonial', {title: 'Testimonial'})
 })
 
+// email page
+app.get('/email', (req, res) => {
+    res.render('email', {title: 'Email Us'})
+})
+
+
+// flash page
+app.get('/flash', (req, res) => {
+    res.render('flash', { title: 'Email Sent' });
+});
+
+
+
+
 app.post('/contact', (req, res) => {
     try{
         const newUser = users(req.body);
@@ -78,6 +92,6 @@ app.post('/contact', (req, res) => {
 
 });
 
-app.listen(5000, () => {
-    console.log("listening to port 5000")
+app.listen(8080, () => {
+    console.log("listening to port 8080")
 })

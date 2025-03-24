@@ -1,3 +1,41 @@
+<style>
+
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+  .dropbtn {
+      background-color: white;
+      color: black;
+      padding: 5px 15px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-transform: capitalize;
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 150px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      z-index: 1;
+  }
+  .dropdown-content a {
+      color: black;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+  }
+  .dropdown-content a:hover {
+      background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+</style>
 <header class="header_section">
       <div class="header_top">
         <div class="container-fluid header_top_container">
@@ -16,35 +54,35 @@
           </div>
           <div class="contact_nav">
             <a href="">
-              <i class="fa fa-phone" aria-hidden="true"></i>
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
               <span>
-                Call : +01 123455678990
+                WhatsApp : +233 50 745 2793 
               </span>
             </a>
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
-                Email : demo@gmail.com
+                Email : techflourishes@gmail.com
               </span>
             </a>
             <a href="">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span>
-                Location
+                Kumasi, Ghana
               </span>
             </a>
           </div>
           <div class="social_box">
-            <a href="">
+            <a href="https://www.facebook.com/share/1689E5SxtB/?mibextid=qi2Omg">
               <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/share/1689E5SxtB/?mibextid=qi2Omg">
               <i class="fa fa-twitter" aria-hidden="true"></i>
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/company/flourish-techeng-limited/">
               <i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/share/1689E5SxtB/?mibextid=qi2Omg">
               <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
           </div>
@@ -69,34 +107,42 @@
                   <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="about"> About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/shopping/index.php"> Shop</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="service">Services</a>
                 </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#"> SkillUp4Industry Program</a>
+                </li> -->
                 <li class="nav-item">
-                  <a class="nav-link" href="about"> About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="project">PRODUCT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="testimonial">Testimonial</a>
+                  <a class="nav-link" href="project">Projects Gallery</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact">Contact Us</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> Login</a>
-                </li>
-                <form class="form-inline">
-                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </form>
+                
+                <div class="dropdown">
+                  <button class="dropbtn">SELLECT OPTION</button>
+                  <div class="dropdown-content">
+                      <a href="#">Manufacturing</a>
+                      <a href="#">Electrical/Solar Work</a>
+                      <a href="#">Consultancy</a>
+                      <a href="#">Fix It With Flourish</a>
+                      <a href="#">SkillUp4industery</a>
+                  </div>
+              </div>
+               
               </ul>
               <div class="quote_btn-container">
-                <a href="" class="quote_btn">
+                <a href="email" class="quote_btn">
                   Get A Quote
                 </a>
               </div>
+             
             </div>
           </nav>
         </div>
