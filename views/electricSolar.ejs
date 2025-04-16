@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title><%- title %></title>
+  <link rel="shortcut icon" href="images/logo1.png">
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+<style>
+  #heroWorkCon{
+    text-align: center;
+  }
+  #heroWorkCon>div{
+    display: inline-block;
+  }
+  @media (max-width: 768px) {
+    #item1,#item2{
+      eight: 20%;    }
+  }
+  .product-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .product-card:hover {
+      transform: scale(1.02);
+    }
+
+    .product-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+</style>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <%- include('./partials/mainH.ejs')%>
+    <!-- end header section -->
+  </div>
+
+  <div class="container-fluid" id="hero" style="
+ background-image: url('images/pictures/elec.jpg');
+ height: 400px;
+ background-size: cover;
+ background-position: center;
+ position: relative;
+ ">
+<div class="hero-text" style="
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: rgb(14, 241, 63);
+     text-align: center;
+     font-size: 40px;
+     font-weight: bold;
+     ">
+<h1>Welcome to Flourish Techeng Limited</h1>
+<h2></h2>
+</div>
+<div class="hero-overlay" style="
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     "></div>
+
+</div>
+
+ <!-- insert items -->
+ <div id="innerCon" class="container" style="
+ margin-bottom: 20px;
+ margin-top: 20px;
+ bder: 3px solid red;">
+<!-- <div id="hero" style="
+ background-image: url('images/pictures/elec.jpg');
+ height: 400px;
+ background-size: cover;
+ background-position: center;
+ position: relative;
+ ">
+<div class="hero-text" style="
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: rgb(14, 241, 63);
+     text-align: center;
+     font-size: 40px;
+     font-weight: bold;
+     ">
+<h1>Welcome to Flourish Techeng Limited</h1>
+<h2></h2>
+</div>
+<div class="hero-overlay" style="
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     "></div>
+
+</div> -->
+<!-- text of work -->
+ <div>
+  <h2 style="
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(14, 241, 63);
+    ">Our Electrical Work</h2>
+  <p style="
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(25, 52, 31);
+    ">Electrical Wiring, Inspection, Troubleshooting, Sales, Installation and Repairs of Electrical
+Machines, Households Appliances, Home Automation, AC Works, Solar Installation, Electric
+Fencing and Fire Alarm Systems.
+</p>
+ </div>
+<!-- sowing of works done -->
+<div class="container mt-5">
+  <!-- <h2 class="text-center mb-4">Our Products</h2> -->
+  <div class="row justify-content-center">
+
+    <!-- Product 1 -->
+    <div class="col-md-6">
+      <div class="product-card">
+        <img src="images/pictures/circuit.jpg" alt="Product 1" class="product-image">
+        <h4 class="mt-3">Circuit Design & Simulation</h4>
+        <p>This is a description of product one. It is an awesome item you’ll love!</p>
+        <button class="btn btn-primary">Contact Now</button>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-md-6">
+      <div class="product-card">
+        <img src="images/pictures/elec.jpg" alt="Product 2" class="product-image">
+        <h4 class="mt-3">General Electronics</h4>
+        <p>This is a description of product two. It’s equally amazing!</p>
+        <button class="btn btn-primary">Contact Now</button>
+      </div>
+    </div>
+
+     <!-- Product 3 -->
+     <div class="col-md-6">
+      <div class="product-card">
+        <img src="images/pictures/back3.jpg" alt="Product 1" class="product-image">
+        <h4 class="mt-3">IoT Device/Project Design</h4>
+        <p>This is a description of product one. It is an awesome item you’ll love!</p>
+        <button class="btn btn-primary">Contact Now</button>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col-md-6">
+      <div class="product-card">
+        <img src="images/pictures/back2.jpg" alt="Product 2" class="product-image">
+        <h4 class="mt-3">3D Model & Printing</h4>
+        <p>This is a description of product two. It’s equally amazing!</p>
+        <button class="btn btn-primary">Contact Now</button>
+      </div>
+    </div>
+
+     <!-- Product 5 -->
+     <div class="col-md-6">
+      <div class="product-card">
+        <img src="images/pictures/prac.jpg" alt="Product 1" class="product-image">
+        <h4 class="mt-3">Practical Based Training</h4>
+        <p>This is a description of product one. It is an awesome item you’ll love!</p>
+        <button class="btn btn-primary">Contact Now</button>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="col-md-6">
+      <div class="product-card">
+        <img src="images/pictures/thesis.jpg" alt="Product 2" class="product-image">
+        <h4 class="mt-3">project Report/Thesis Wiring</h4>
+        <p>This is a description of product two. It’s equally amazing!</p>
+        <button class="btn btn-primary">Contact Now</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+      
+
+</div>
+
+</div>
+
+
+
+  <%- include('./partials/footer.ejs')%>
+  
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!--  OwlCarousel 2 - Filter -->
+  <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>

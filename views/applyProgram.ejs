@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title> <%- title %></title>
+  <link rel="shortcut icon" href="images/logo1.png">
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+<style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .application-form {
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 50px auto;
+    }
+
+    .form-title {
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+      color: #0ad971;
+    }
+  </style>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <%- include('./partials/mainH.ejs')%>
+    <!-- end header section -->
+  </div>
+<!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
+
+<!-- from to apply for a program -->
+<div class="container">
+    <div class="application-form">
+      <div class="form-title">Apply for a Program</div>
+      <form>
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+        </div>
+  
+        <div class="mb-3">
+          <label for="emailAddress" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="emailAddress" placeholder="Enter your email" required>
+        </div>
+  
+        <div class="mb-3">
+          <label for="phoneNumber" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
+        </div>
+  
+        <div class="mb-3">
+          <label for="program" class="form-label">Select Program</label>
+          <select class="form-control" id="program" required>
+            <option value="" disabled selected>Select a program</option>
+            <option value="arp">Arduino Programming & Circuitry </option>
+            <option value="elec">Electrical Wiring for CEWP Exams
+            </option>
+            <option value="solar">Solar Systems Installation</option>
+            <option value="mastor"> Master CCTV Installation & Maintenance </option>
+          </select>
+        </div>
+  
+        <div class="mb-3">
+          <label for="message" class="form-label">Additional Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Tell us why you're applying (optional)"></textarea>
+        </div>
+  
+        <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+      </form>
+    </div>
+  </div>
+  <%- include('./partials/footer.ejs')%>
+  
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!--  OwlCarousel 2 - Filter -->
+  <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>

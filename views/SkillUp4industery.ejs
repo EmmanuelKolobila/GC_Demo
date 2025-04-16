@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title> <%- title %></title>
+  <link rel="shortcut icon" href="images/logo1.png">
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+<style>
+.hero {
+  background: url('images/pictures/elec.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 100px 20px;
+  min-height: 60vh;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+    .hero h1 {
+      font-weight: bold;
+      font-size: 2.8rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .about-section {
+      padding: 50px 20px;
+      background-color: #fff;
+    }
+
+    .form-section {
+      padding: 50px 20px;
+      background-color: #e0f7fa;
+    }
+
+    .form-card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+</style>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <%- include('./partials/mainH.ejs')%>
+    <!-- end header section -->
+  </div>
+<!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
+
+ 
+<!-- HERO SECTION WITH BACKGROUND IMAGE -->
+<section class="hero text-white d-flex align-items-center">
+  <div class="container text-center">
+    <h1>Skill Up for Industry</h1>
+    <p>Empowering students with the practical skills needed for the modern workplace.</p>
+  </div>
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section class="about-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>About the Program</h2>
+        <p>
+          "Skill Up for Industry" is designed to bridge the gap between academic learning and industry demands.
+          Our training equips you with technical, digital, and soft skills employers are looking for.
+        </p>
+        <ul>
+          <li>Hands-on Training</li>
+          <li>Mentorship from Industry Experts</li>
+          <li>Real-world Projects</li>
+          <li>Certification Upon Completion</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <img src="images/pictures/back3.jpg" class="img-fluid rounded" alt="Skill Up Program">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATION FORM SECTION -->
+<section class="form-section">
+  <div class="container">
+    <h2 class="text-center mb-4">Apply Now</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="form-card">
+          <form>
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="emailAddress" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="emailAddress" placeholder="Enter your email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="program" class="form-label">Select Program</label>
+              <select class="form-control" id="program" required>
+                <option value="" disabled selected>Select a program</option>
+                <option value="arp">Arduino Programming & Circuitry </option>
+                <option value="elec">Electrical Wiring for CEWP Exams
+                </option>
+                <option value="solar">Solar Systems Installation</option>
+                <option value="mastor"> Master CCTV Installation & Maintenance </option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="why" class="form-label">Why do you want to join?</label>
+              <textarea class="form-control" id="why" rows="3" placeholder="Tell us a bit..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">Submit Application</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <%- include('./partials/footer.ejs')%>
+  
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!--  OwlCarousel 2 - Filter -->
+  <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>

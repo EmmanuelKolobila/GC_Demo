@@ -1,5 +1,4 @@
 <style>
-
   .dropdown {
       position: relative;
       display: inline-block;
@@ -18,10 +17,11 @@
       display: none;
       position: absolute;
       background-color: white;
-      min-width: 150px;
+      min-width: 200px;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
       border-radius: 5px;
-      z-index: 1;
+      z-index: 5;
+
   }
   .dropdown-content a {
       color: black;
@@ -110,14 +110,25 @@
                   <a class="nav-link" href="about"> About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="http://localhost/shopping/index.php"> Shop</a>
+                  <a class="nav-link" href="http://localhost/shopGC/shopping/index.php"> Shop</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="service">Services</a>
+                  <a class="nav-link" href="service">Quick Check</a>
                 </li>
                 <!-- <li class="nav-item">
                   <a class="nav-link" href="#"> SkillUp4Industry Program</a>
                 </li> -->
+                <div class="dropdown">
+                  <button class="dropbtn">SERVICE</button>
+                  <div class="dropdown-content" >
+                      <a href="manufac">Manufacturing</a>
+                      <a href="electricSolar">Electrical/Solar Work</a>
+                      <a href="trainingPro">Training Programs</a>
+                      <a href="SkillUp4industery">SkillUp4industery</a>
+                      <a href="#">Fix It With Flourish</a>
+                   
+                  </div>
+              </div>
                 <li class="nav-item">
                   <a class="nav-link" href="project">Projects Gallery</a>
                 </li>
@@ -125,16 +136,7 @@
                   <a class="nav-link" href="contact">Contact Us</a>
                 </li>
                 
-                <div class="dropdown">
-                  <button class="dropbtn">SELLECT OPTION</button>
-                  <div class="dropdown-content">
-                      <a href="#">Manufacturing</a>
-                      <a href="#">Electrical/Solar Work</a>
-                      <a href="#">Consultancy</a>
-                      <a href="#">Fix It With Flourish</a>
-                      <a href="#">SkillUp4industery</a>
-                  </div>
-              </div>
+                
                
               </ul>
               <div class="quote_btn-container">

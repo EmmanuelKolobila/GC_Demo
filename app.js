@@ -68,12 +68,32 @@ app.get('/email', (req, res) => {
     res.render('email', {title: 'Email Us'})
 })
 
+// manufacturing page
+app.get('/manufac', (req, res) => {
+    res.render('manufac', {title: 'Manufacturing'})
+})
+
+// electrical page 
+app.get('/electricSolar', (req, res) => {
+    res.render('electricSolar', {title: 'Electrical Solar'})
+})
 
 // flash page
 app.get('/flash', (req, res) => {
     res.render('flash', { title: 'Email Sent' });
 });
-
+// trainingPro 
+app.get('/trainingPro', (req, res) => {
+    res.render('trainingPro', { title: 'Trianing programs' });
+});
+// SkillUp4industery
+app.get('/SkillUp4industery', (req, res) => {
+    res.render('SkillUp4industery', { title: 'SkillUp4industery' });
+});
+// apply for a program page
+app.get('/applyProgram', (req, res) => {
+    res.render('applyProgram', { title: 'Apply for a program' });
+});
 
 
 
@@ -92,6 +112,6 @@ app.post('/contact', (req, res) => {
 
 });
 
-app.listen(8080, () => {
-    console.log("listening to port 8080")
+app.listen(3000, () => {
+    console.log("listening to port 3000")
 })
