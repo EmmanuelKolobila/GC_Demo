@@ -95,6 +95,11 @@ app.get('/applyProgram', (req, res) => {
     res.render('applyProgram', { title: 'Apply for a program' });
 });
 
+// consoltancy page
+app.get('/consultancy', (req, res) => {
+    res.render('consultancy', { title: 'Consultancy' });
+});
+
 
 
 app.post('/contact', (req, res) => {

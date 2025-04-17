@@ -36,6 +36,25 @@
 
 </head>
 <style>
+      .product-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .product-card:hover {
+      transform: scale(1.02);
+    }
+
+    .product-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
 .hero {
   background: url('images/pictures/elec.jpg') no-repeat center center;
   background-size: cover;
@@ -94,19 +113,78 @@
     <%- include('./partials/mainH.ejs')%>
     <!-- end header section -->
   </div>
-<!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
+<!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 
+
+
+<div class="container-fluid" id="hero" style="
+background-image: url('images/pictures/tp.jpg');
+height: 400px;
+background-size: cover;
+background-position: center;
+position: relative;
+">
+<div class="hero-text" style="
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(14, 241, 63);
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    ">
+<h1>Welcome To Our Training Programs</h1>
+<h2></h2>
+</div>
+<div class="hero-overlay" style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    "></div>
+
+</div>
  
-<!-- HERO SECTION WITH BACKGROUND IMAGE -->
-<section class="hero text-white d-flex align-items-center">
-  <div class="container text-center">
-    <h1>Skill Up for Industry</h1>
-    <p>Empowering students with the practical skills needed for the modern workplace.</p>
-  </div>
-</section>
+ 
+ <div id="innerCon" class="container" style="
+                        rder: 3px solid red;
+                        margin: 20px auto;">
+                        
+      <!-- <div id="hero" style="
+                        background-image: url('images/pictures/tp.jpg');
+                        height: 400px;
+                        background-size: cover;
+                        background-position: center;
+                        position: relative;
+                        ">
+        <div class="hero-text" style="
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            color: rgb(14, 241, 63);
+                            text-align: center;
+                            font-size: 40px;
+                            font-weight: bold;
+                            ">
+            <h1>Welcome To Our Training Programs</h1>
+            <h2></h2>
+        </div>
+        <div class="hero-overlay" style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgba(0, 0, 0, 0.5);
+                            "></div>
 
-
-<!-- ABOUT SECTION -->
+      </div> -->
+      
+        <!-- ABOUT SECTION -->
 <section class="about-section">
   <div class="container">
     <div class="row align-items-center">
@@ -129,6 +207,218 @@
     </div>
   </div>
 </section>
+
+<!-- cards -->
+
+      <div class="row" style="
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        padding: 20px;
+                        background-color: white;
+                        border-radius: 10px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        ">
+
+                      
+        <div class="col-md-12">
+
+
+
+          <h2 style="
+                            text-align: center;
+                            font-size: 30px;
+                            font-weight: bold;
+                            color: #333;
+                            ">Our Training Progarms</h2>
+          
+         </div>
+         <div class="container mt-5">
+            <!-- <h2 class="text-center mb-4">Our Products</h2> -->
+            <div class="row justify-content-center">
+          
+              <!-- Product 1 -->
+              <div class="col-md-6">
+                <div class="product-card">
+                  <img src="images/pictures/iot.jpg" alt="Product 1" class="product-image">
+                  <h4 class="mt-3">Arduino Programming & Circuitry </h4>
+                  <p>
+                    <ul>
+                        <li>Introduction to Internet of Things (IoT)</li>
+                        <li>Insight on the 4th Industrial Revolution</li>
+                        <li>Introduction to electronic circuitry & robotics
+                        </li>
+                        <li>Overview of different Arduino boards & programming
+                        </li>
+                        <li>Practical project development using Arduino</li>
+                    </ul>
+                  </p>
+                  <button class="btn btn-primary"> <a style="color: white;" href="applyProgram">Contact Now</a></button>
+                </div>
+              </div>
+          
+              <!-- Product 2 -->
+              <div class="col-md-6">
+                <div class="product-card">
+                  <img src="images/pictures/v.jpg" alt="Product 2" class="product-image">
+                  <h4 class="mt-3">Electrical Wiring for CEWP Exams</h4>
+                  <p>
+                    <ul>
+                        <li>Introduction to electrical symbols and diagrams</li>
+                        <li>Appliances installation, maintenance and repairs
+                        </li>
+                        <li>Get practical skill in electrical wiring (domestic, Commercial)
+                        </li>
+                        <li>Become practically prepared to take the Energy Commission (CEWP) exams anytime
+                        </li>
+                    </ul>
+                  </p>
+                  <button class="btn btn-primary"> <a style="color: white;" href="applyProgram">Contact Now</a></button>
+                </div>
+              </div>
+          
+               <!-- Product 3 -->
+               <div class="col-md-6">
+                <div class="product-card">
+                  <img src="images/pictures/miss.jpg" alt="Product 1" class="product-image">
+                  <h4 class="mt-3">Solar Systems Installation</h4>
+                  <p>
+                    <ul>
+                        <li>Become a practical Solar Professional </li>
+                        <li>Get NVTI Proficiency 1 Certificate
+                        </li>
+                        <li>Conduct energy efficiency audits</li>
+                        <li>How to carry out load & battery calculations, panel, inverter and charge controller type
+                            selection
+                            </li>
+                            <li>Practically install solar systems for homes & businesses
+                            </li>
+                    </ul>
+                  </p>
+                  <button class="btn btn-primary"> <a style="color: white;" href="applyProgram">Contact Now</a></button>
+                </div>
+              </div>
+          
+              <!-- Product 4 -->
+              <div class="col-md-6">
+                <div class="product-card">
+                  <img src="images/pictures/cctv.jpg" alt="Product 2" class="product-image">
+                  <h4 class="mt-3">Master CCTV Installation & Maintenance </h4>
+                  <p>
+                    <ul>
+                        <li>Install and maintain video over a UTP cable.
+                        </li>
+                        <li>Run and terminate various cables (RG59, URM70, RG11, CT125, twisted pair).
+                        </li>
+                        <li>Connect and set up video distribution amplifiers
+                            and coaxial cables.</li>
+                        <li>Configure motorized zoom, varifocal, aspherical,
+                                and fixed lenses.
+                                </li>
+                    </ul>
+                  </p>
+                  <button class="btn btn-primary"> <a style="color: white;" href="applyProgram">Contact Now</a></button>
+                </div>
+              </div>
+          
+               <!-- Product 5 -->
+               <div class="col-md-6">
+                <div class="product-card">
+                  <img src="images/pictures/pann.jpg" alt="Product 1" class="product-image">
+                  <h4 class="mt-3">Satellite Dish Installation (DSTV, Multi TV)</h4>
+                  <p>
+                    <ul>
+                        <li>Dish Assembling</li>
+                        <li>Dish and Cable Installation
+                        </li>
+                        <li>Signal Tracking & Channels Scanning
+                        </li>
+                        <li>Fault Detection and many more
+                        </li>
+                    </ul>
+                  </p>
+                  <button class="btn btn-primary"> <a style="color: white;" href="applyProgram">Contact Now</a></button>
+                </div>
+              </div>
+          
+              <!-- Product 6 -->
+              <div class="col-md-6">
+                <div class="product-card">
+                  <img src="images/pictures/plc.jpg" alt="Product 2" class="product-image">
+                  <h4 class="mt-3">PLC Programming Crash Course
+                </h4>
+                  <p>
+                    <ul>
+                        <li>Introduction to industry standard PLCs and software</li>
+                        <li>PLC communication settings and configuration
+                        </li>
+                        <li>PLC instructions programming-Digital/Analog
+                        </li>
+                        <li>Wiring & installation (Digital/Analog) and troubleshooting Real-time process plant
+                            project works and practice</li>
+                    </ul>
+                  </p>
+                  <button class="btn btn-primary"> <a style="color: white;" href="applyProgram">Contact Now</a></button>
+                </div>
+              </div>
+
+               <!-- Product 1 -->
+               <div class="col-md-6">
+                <div class="product-card">
+                  <img src="images/pictures/hmi.jpg" alt="Product 1" class="product-image">
+                  <h4 class="mt-3">(HMI) Human Machine Interface Training
+                </h4>
+                  <p>
+                    <ul>
+                        <li>Introduction and Applications of HMI</li>
+                        <li>HMI Architecture, Design and Development
+                        </li>
+                        <li>Communication Configurations between HMI and PLC
+                        </li>
+                        <li>Downloading and Uploading Programs
+                        </li>
+                        <li>Real-time experience in industrial Project works and more
+                        </li>
+                    </ul>
+                  </p>
+                  <button class="btn btn-primary"> <a style="color: white;" href="applyProgram">Contact Now</a></button>
+                </div>
+              </div>
+          
+              <!-- Product 2 -->
+              <div class="col-md-6">
+                <div class="product-card">
+                  <img src="images/pictures/v.jpg" alt="Product 2" class="product-image">
+                  <h4 class="mt-3">(VFD) Variable Frequency Drives training</h4>
+                  <p>
+                    <ul>
+                        <li>Programming and Installation of VFDs
+                        </li>
+                        <li>Discrete Continuous Speed Control Using VFDs
+                        </li>
+                        <li>Safety and Management Concepts of Designing a Project
+                        </li>
+                        <li>Concept of Two Wire/Three Wire Controls
+                        </li>
+                        <li>Selection of VFDs, VFD Control Using PLC And
+                            Temperature Controller</li>
+                    </ul>
+                  </p>
+                  <button class="btn btn-primary"> <a style="color: white;" href="applyProgram">Contact Now</a></button>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+
+</div>
+
+ </div>
+
+ <!-- uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu -->
+
+
+
+
 
 <!-- APPLICATION FORM SECTION -->
 <section class="form-section">
